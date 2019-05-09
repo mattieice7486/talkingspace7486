@@ -115,10 +115,11 @@ CREATE TABLE IF NOT EXISTS `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `avatar`, `username`, `password`, `about`, `last_activity`, `join_date`) VALUES
-(1, 'Brad Traversy', 'techguyinfo@gmail.com', 'avatar1.jpg', 'BradT', '827ccb0eea8a706c4c34a16891f84e7b', 'Im a web developer from Boston MA', '0000-00-00 00:00:00', '2014-07-02 15:26:21'),
-(2, 'John Doe', 'jdoe@gmail.com', 'avatar2.jpg', 'JDoe', '827ccb0eea8a706c4c34a16891f84e7b', '', '0000-00-00 00:00:00', '2014-07-02 16:40:45'),
-(3, 'Steven Wright', 'swright@yahoo.com', 'download.jpg', 'swright', '827ccb0eea8a706c4c34a16891f84e7b', '', '2014-07-03 17:37:16', '2014-07-03 15:37:16'),
-(4, 'Jane Doe', 'jane@yahoo.com', 'sample2.jpg', 'jane', '81dc9bdb52d04dc20036dbd8313ed055', 'I am jane', '2014-07-03 17:58:43', '2014-07-03 15:58:43');
+(1, 'Matt Eisenstadter', 'mattieice@gmail.com', 'avatar1.jpg', 'mattieice', 'Kromchi603', 'Im the admin', '0000-00-00 00:00:00', '2019-05-09 15:26:21'),
+(2, 'Brad Traversy', 'techguyinfo@gmail.com', 'avatar1.jpg', 'BradT', '827ccb0eea8a706c4c34a16891f84e7b', 'Im a web developer from Boston MA', '0000-00-00 00:00:00', '2014-07-02 15:26:21'),
+(3, 'John Doe', 'jdoe@gmail.com', 'avatar2.jpg', 'JDoe', '827ccb0eea8a706c4c34a16891f84e7b', '', '0000-00-00 00:00:00', '2014-07-02 16:40:45'),
+(4, 'Steven Wright', 'swright@yahoo.com', 'download.jpg', 'swright', '827ccb0eea8a706c4c34a16891f84e7b', '', '2014-07-03 17:37:16', '2014-07-03 15:37:16'),
+(5, 'Jane Doe', 'jane@yahoo.com', 'sample2.jpg', 'jane', '81dc9bdb52d04dc20036dbd8313ed055', 'I am jane', '2014-07-03 17:58:43', '2014-07-03 15:58:43');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
