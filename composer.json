@@ -1,0 +1,7 @@
+{
+	"name": "talkingspace",
+	"description": "php forum app",
+  "require": {
+    "ext-mysqli": "*"
+  }
+}
