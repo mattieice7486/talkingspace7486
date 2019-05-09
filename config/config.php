@@ -8,4 +8,4 @@ define("DB_NAME", "heroku_c67bcc44057f343");
 define("SITE_TITLE", "Welcome To TalkingSpace!");
 
 //Paths
-define ('BASE_URI', 'http://'.$_SERVER['SERVER_NAME'].'/talkingspace/');
+define ('BASE_URI', 'https://'.$_SERVER['SERVER_NAME'].'/talkingspace/');
