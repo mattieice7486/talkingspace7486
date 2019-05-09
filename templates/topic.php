@@ -4,11 +4,11 @@
 		<div class="row">
 			<div class="col-md-2">
 				<div class="user-info">
-					<img class="avatar pull-left" src="<?php echo BASE_URI; ?>images/avatars/<?php echo $topic->avatar; ?>" />
+					<img class="avatar pull-left" src="images/avatars/<?php echo $topic->avatar; ?>" />
 					<ul>
 						<li><strong><?php echo $topic->username; ?></strong></li>
 						<li><?php echo userPostCount($topic->user_id); ?> Posts</li>
-						<li><a href="<?php echo BASE_URI; ?>topics.php?user=<?php echo $topic->user_id; ?>">View topics</a>
+						<li><a href="topics.php?user=<?php echo $topic->user_id; ?>">View topics</a>
 					</ul>
 				</div>
 			</div>
@@ -26,11 +26,11 @@
 		<div class="row">
 			<div class="col-md-2">
 				<div class="user-info">
-					<img class="avatar pull-left" src="<?php echo BASE_URI; ?>images/avatars/<?php echo $reply->avatar; ?>" />
+					<img class="avatar pull-left" src="images/avatars/<?php echo $reply->avatar; ?>" />
 					<ul>
 						<li><strong><?php echo $reply->username; ?></strong></li>
 						<li><?php echo userPostCount($reply->user_id); ?> Posts</li>
-						<li><a href="<?php echo BASE_URI; ?>topics.php?user=<?php echo $reply->user_id; ?>">View Topics</a>
+						<li><a href="topics.php?user=<?php echo $reply->user_id; ?>">View Topics</a>
 					</ul>
 				</div>
 			</div>
