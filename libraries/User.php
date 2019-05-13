@@ -47,13 +47,15 @@ class User{
 				|| ($_FILES["avatar"]["type"] == "image/pjpeg")
 				|| ($_FILES["avatar"]["type"] == "image/x-png")
 				|| ($_FILES["avatar"]["type"] == "image/png"))
-				&& ($_FILES["avatar"]["size"] < 100000)
+				&& ($_FILES["avatar"]["size"] < 5000000)
 				&& in_array($extension, $allowedExts)) {
 			if ($_FILES["avatar"]["error"] > 0) {
 				redirect('register.php', $_FILES["avatar"]["error"], 'error');
 			} else {
 				if (file_exists("images/avatars/" . $_FILES["avatar"]["name"])) {
 					redirect('register.php', 'File already exists', 'error');
+				} elseif ($_FILES["avatar"]["size"] > 5000000) {
+					redirect('register.php', 'Please select a file 5MB or smaller', 'error');
 				} else {
 					move_uploaded_file($_FILES["avatar"]["tmp_name"],
 					"images/avatars/" . $_FILES["avatar"]["name"]);
