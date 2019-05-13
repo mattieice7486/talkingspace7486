@@ -54,8 +54,6 @@ class User{
 			} else {
 				if (file_exists("images/avatars/" . $_FILES["avatar"]["name"])) {
 					redirect('register.php', 'File already exists', 'error');
-				} elseif ($_FILES["avatar"]["size"] > 5000000) {
-					redirect('register.php', 'Please select a file 5MB or smaller', 'error');
 				} else {
 					move_uploaded_file($_FILES["avatar"]["tmp_name"],
 					"images/avatars/" . $_FILES["avatar"]["name"]);
@@ -64,7 +62,7 @@ class User{
 				}
 			}
 		} else {
-			redirect('register.php', 'Invalid File Type!', 'error');
+			redirect('register.php', 'File must be less than 5MB and .jpg, .png, or .gif', 'error');
 		}
 	}
 	
